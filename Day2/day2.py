@@ -1,9 +1,3 @@
-
-
-
-
-
-
 def letterCounter(letter,password):
     sum = 0
     for l in password:
@@ -16,9 +10,7 @@ def main():
 
     input_passwords = [x.replace('\n', '') for x in open('input.txt','r').readlines()]
 
-
     #1-4 m: mrfmmbjxr
-
 
     #PART1
 
@@ -34,13 +26,11 @@ def main():
 
     print(str(valid) + ' passwords')
 
-
     #PART2
 
     valid = 0
     for pw in input_passwords:
         password = pw.split(' ')
-        
         places = [int(x)-1 for x in password[0].split('-')]
         letter = password[1].replace(':', '')
         print(password[2])
@@ -50,11 +40,6 @@ def main():
             valid +=1
 
     print(str(valid) + ' passwords')
-
-
-
-
-
 
 
 if __name__ == '__main__':
