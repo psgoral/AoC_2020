@@ -9,7 +9,6 @@ def main():
                 print(str(num1) + ' * ' + str(num2) + ' = '+ str(int(num1) * int(num2)))
 
     #PART2
-
     for num1 in numbers:
         for num2 in numbers:
             for num3 in numbers:
